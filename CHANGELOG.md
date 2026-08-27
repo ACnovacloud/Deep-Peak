@@ -15,6 +15,8 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/
 - Cálculo local de los horarios pico en UTC (sin llamadas a red), basado en la documentación oficial:
   - `01:00–04:00` y `06:00–10:00` UTC, de lunes a viernes.
 - Refresco automático del indicador cada 60 segundos.
+- Tooltip con la leyenda del estado al pasar el mouse sobre el indicador:
+  - `off-peak`, `almost peak`, `almost offpeak`, `peak`.
 - Lógica de horarios en módulo independiente (`pricing.js`), testeable con `npm test`.
 
 ### Notas técnicas

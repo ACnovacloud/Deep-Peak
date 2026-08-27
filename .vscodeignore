@@ -1,0 +1,8 @@
+# Archivos que se excluyen al empaquetar con vsce (.vsix)
+.git/**
+.vscode/**
+tools/**
+release/**
+test.js
+*.vsix
+*.zip

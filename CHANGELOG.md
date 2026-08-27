@@ -4,6 +4,19 @@ Todos los cambios notables de la extensión **DeepSeek Peak Indicator** se docum
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/), y este proyecto respeta [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.0.2] - 2026-08-27
+
+### Añadido
+- Scripts de instalación local sin necesidad de Node.js en `tools/`:
+  - `instalar.ps1` / `instalar.bat` — copian los archivos de la extensión a la carpeta de extensiones de VS Code (`~\.vscode\extensions\`) y eliminan versiones anteriores.
+  - `desinstalar.ps1` / `desinstalar.bat` — eliminan la extensión instalada localmente.
+
+### Cambiado
+- `README.md`: nueva sección **Instalación local** con instrucciones de instalación y desinstalación.
+
+### Notas técnicas
+- La instalación por copia directa usa la convención de carpeta `<publisher>.<name>-<version>` requerida por VS Code.
+
 ## [0.0.1] - 2026-08-27
 
 ### Añadido

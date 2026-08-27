@@ -1,1 +1,6 @@
 .ignore
+
+# Instaladores generados localmente
+release/
+*.vsix
+*.zip

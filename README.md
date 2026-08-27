@@ -20,6 +20,23 @@ DeepSeek define el pico en **UTC**, de lunes a viernes (el fin de semana complet
 
 El estado se calcula localmente con la hora UTC del sistema: **no hace llamadas a red**.
 
+## Instalación local
+
+La carpeta `tools\` incluye scripts para instalar la extensión **sin necesidad de Node.js**: copian los archivos directamente a la carpeta local de extensiones de VS Code.
+
+### Instalar
+
+1. Haz doble clic en `tools\instalar.bat` (o ejecuta `tools\instalar.ps1` desde PowerShell).
+2. Recarga VS Code: `Ctrl+Shift+P` → `Developer: Reload Window`.
+
+Los archivos se copian a `~\.vscode\extensions\deepseek-indicator.deepseek-peak-indicator-0.0.2\` (usa `-Insiders` para VS Code Insiders).
+
+### Desinstalar
+
+Doble clic en `tools\desinstalar.bat` (o `tools\desinstalar.ps1`) y recarga VS Code.
+
+> Alternativa con Node.js: si tienes `node`/`npm`, puedes empaquetar un `.vsix` con `npx @vscode/vsce package` e instalarlo con `code --install-extension <archivo>.vsix`.
+
 ## Cómo probar
 
 1. Abre esta carpeta en VS Code.

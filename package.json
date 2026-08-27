@@ -1,0 +1,21 @@
+{
+  "name": "deepseek-peak-indicator",
+  "displayName": "DeepSeek Peak Indicator",
+  "description": "Muestra un bloque de color en la barra de estado según si la API de DeepSeek está en hora pico (tarifa 2x) u off-peak (50% descuento).",
+  "version": "0.0.1",
+  "publisher": "deepseek-indicator",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}

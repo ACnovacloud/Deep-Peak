@@ -36,6 +36,16 @@ const COLORS = {
 };
 
 /**
+ * Texto del tooltip para cada estado.
+ */
+const LABELS = {
+  [STATE.GREEN]: 'off-peak',
+  [STATE.YELLOW]: 'almost peak',
+  [STATE.ORANGE]: 'almost offpeak',
+  [STATE.RED]: 'peak',
+};
+
+/**
  * Devuelve el estado según la tarifa actual de DeepSeek.
  *
  *  - green   -> off-peak
@@ -72,4 +82,4 @@ function getState(date) {
   return STATE.GREEN;
 }
 
-module.exports = { getState, COLORS, STATE, PEAK_WINDOWS };
+module.exports = { getState, COLORS, LABELS, STATE, PEAK_WINDOWS };

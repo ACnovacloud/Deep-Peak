@@ -1,7 +1,7 @@
 'use strict';
 
 const vscode = require('vscode');
-const { getState, COLORS } = require('./pricing');
+const { getState, COLORS, LABELS } = require('./pricing');
 
 // El estado solo cambia en la hora exacta UTC, así que 60s es más que suficiente.
 const REFRESH_INTERVAL_MS = 60 * 1000;
@@ -19,6 +19,7 @@ function activate(context) {
     // como un fondo de color en la barra de estado.
     statusBarItem.text = '\u2588';
     statusBarItem.color = COLORS[state];
+    statusBarItem.tooltip = LABELS[state];
     statusBarItem.show();
   }
 
